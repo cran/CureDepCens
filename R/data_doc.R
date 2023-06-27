@@ -1,0 +1,24 @@
+#' Dogs_MimicData data set
+#'
+#' @name Dogs_MimicData
+#' @docType data
+#' @keywords datasets
+#' @description A simulated data frame with 800 dogs. Simulated dataset that mimic a free-ranging dogs result study. In this simulated dataset it is hypothetically suggested the following causes of outcome: event of interest: death due to natural causes; dependent censoring: age until adopted or death due to human causes; administrative censoring: all other outcomes. More details about the dog study can be found at Paul et al. (2016).
+
+#' @format A data frame with 800 rows and 13 variables:
+#' \itemize{
+#'   \item u: auxiliary variable, with Uniform distribution.
+#'   \item v: auxiliary variable, with Uniform distribution.
+#'   \item t: variable that represents the failure time.
+#'   \item c: variable that represents the dependent censoring time.
+#'   \item time: time observed until the occurrence of the outcome, min(t,c).
+#'   \item event: variable that indicates the occurrence of the event of interest, event=1 if the event of interest occurs.
+#'   \item int: auxiliary variable to generate the intercept.
+#'   \item x1_cure: covariate 1, generated from a Binomial distribution. Can denote, for example, a binary result.
+#'   \item x2_cure: covariate 2, generated from a Normal distribution. Can denote, for example, a exam result or an standardized age.
+#'   \item x_c1: covariate 3, generated from a Normal distribution. Can denote, for example, an standardized age.
+#'   \item x_c2: covariate 4, generated from a Binomial distribution. can denote, for example,  an treatment result.
+#'   \item cens: variable that indicates the outcome, cens=1 if the event of interest occurred (death due to natural causes); cens=2 if the  dependent censoring occurred (age until adopted or death due to human causes); cens=3 if administrative censoring.
+#'   \item ident: Variable that indicates the litter or cluster.
+#' }
+NULL

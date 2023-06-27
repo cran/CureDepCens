@@ -1,0 +1,25 @@
+#' The 'CureDepCens' package.
+#'
+#' @description Cure dependent censoring regression models for long-term survival multivariate data. These models are based on extensions of the frailty models, capable to accommodating the cure fraction and the dependence between failure and censoring times, with Weibull and piecewise exponential marginal distributions. Theoretical details regarding the models implemented in the package can be found in Schneider et al. (2022) <doi:10.1007/s10651-022-00549-0>.
+#'
+#' @docType package
+#' @name CureDepCens-package
+#' @aliases CureDepCens
+#' @import Formula
+#' @import survival
+#' @import stats
+#' @import dlm
+#' @importFrom rootSolve multiroot
+#' @importFrom matrixStats colProds
+#' @importFrom graphics lines
+#'
+#' @references
+#' Schneider, S.; Demarqui, F. N.; Costa, E. F. (2022). Free-ranging dogs' lifetime estimated by an approach for long-term survival data with dependent censoring. Environmental and Ecological Statistics,  v.29, 869--911.
+#'
+#' Schneider, S.; Demarqui, F. N.; Colosimo, E. A.; Mayrink, V. D. (2020). An approach to model clustered survival data with dependent censoring. Biometrical Journal, v.62, n.1, 157--174.
+#'
+#' Louis, T. A. (1982). Finding the observed information matrix when using the EM algorithm. Journal of the Royal Statistical Society, B44, 226-233.
+#'
+#' Paul M., Majumder S.; Sau S.; Nandi A.; Bhadra A. (2016). High early life mortality in free-ranging dogs is largely influenced by humans. Scientific Reports v.6.
+#'
+NULL
